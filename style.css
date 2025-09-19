@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*general styling-----------------------------------*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+    font-family: "Limelight", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.13rem;
+}
+
+h1 {
+    font-size: 1.7rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+button {
+    border: none;
+    background-color: #0BA39C;
+    color:white;
+    padding: 1.3rem 1.5rem;
+    text-transform: uppercase;
+    font-weight: 100;
+
+    transition: background-color, .5s;
+}
+
+button:hover{
+    
+    background-color:white;
+    color:#0BA39C;
+    cursor:pointer;
+}
+
+
+
+/*header styling-----------------------------------*/
+
+header {
+    width: 100%;
+    text-align: center;
+}
+
+header img.logo {
+    margin: 2rem;
+}
+
+nav ul{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 5px 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: darkslategray;
+}
+
+a:active {
+    color:lightgray;
+}
+
+a.selected {
+    color:gray;
+    
+}
+
+
+
+/*main body styling-----------------------------------*/
+
+#hero {
+    height: 40vw;
+    background-image: url("images/the-beacon.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.halfWidthColumn {
+    width: 50%;
+    
+}
+
+#hero {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#hero div.halfWidthColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero .halfWidthColumn h1 {
+    width:fit-content;
+    background-color: white;
+    padding: 1.5rem 3rem;
+    margin: 2rem 0;
+}
+
+#hero .halfWidthColumn h3 {
+    width: fit-content;
+    color:white;
+    background-color: rgb(36, 36, 36);
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+}
+
+#homeTripleGallery {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 3rem 0 1rem 0;
+}
+
+.threeColumnImage {
+    padding: 0 .5rem;
+}
+
+.threeColumnImage img {
+    border: 3px solid gray;
+}
+
+.threeColumnImage h2 {
+    margin: 2rem 0;
+}
+
+
+
+/*footer styling--------------------------------------------*/
+footer {
+    background-color: rgb(39, 39, 39);
+    color:white;
+    padding: 3rem 7rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#socialIcons {
+    display: flex;
+}
+
+.socialIcon {
+    height: 50px;
+    width: 50px;
+
+    margin: 0 .7rem;
+}
+
+.socialIcon#twitter {
+    background-image: url("images/icons/icon-twitter.jpg");
+    background-size: contain;
+    transition: all .3s;
+}
+
+.socialIcon#twitter:hover {
+    background-image: url("images/icons/icon-twitter-hover.jpg");
+    cursor: pointer;
+}
+
+.socialIcon#facebook {
+    background-image: url("images/icons/icon-facebook.jpg");
+    background-size: contain;
+    transition: all .3s;
+}
+
+.socialIcon#facebook:hover {
+    background-image: url("images/icons/icon-facebook-hover.jpg");
+    cursor: pointer;
+}
+
+.socialIcon#google {
+    background-image: url("images/icons/icon-googleplus.jpg");
+    background-size: contain;
+    transition: all .3s;
+}
+
+.socialIcon#google:hover {
+    background-image: url("images/icons/icon-googleplus-hover.jpg");
+    cursor: pointer;
+}
+
+.socialIcon#pinterest {
+    background-image: url("images/icons/icon-pinterest.jpg");
+    background-size: contain;
+    transition: all .3s;
+}
+
+.socialIcon#pinterest:hover {
+    background-image: url("images/icons/icon-pinterest-hover.jpg");
+    cursor: pointer;
+}
