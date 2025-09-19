@@ -261,6 +261,7 @@ li a.selected {
     display: flex;
     border: 3px solid #252525;
     text-align: center;
+    margin: 0.5rem 0;
 }
 
 .blogPostTab img{
